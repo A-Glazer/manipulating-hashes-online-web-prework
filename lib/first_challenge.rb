@@ -19,6 +19,7 @@ require 'pry'
         value.each do |flavor|
           flavor.delete_if |name|
           name == "strawberry"
+          binding.pry
         end
       end
     end
@@ -30,3 +31,4 @@ require 'pry'
   #remember to return your newly altered contacts hash!
   contacts
 end
+
